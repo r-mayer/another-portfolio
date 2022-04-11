@@ -1,0 +1,226 @@
+
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --dark-one: rgb(29,29,29);
+    --dark-two: rgb(44, 44, 44);
+    --midtone: rgb(125,125,125);
+    --light-one: white;
+    --light-two: rgb(219, 255, 243);
+    --main: rgb(34,81,83);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    position: relative;
+    z-index: 5;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--midtone);
+}
+
+.column-1 {
+    margin-right: 1.5rem;
+}
+
+.column-2 {
+    margin-left: 1.5rem;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FIM DO RESET */
+
+
+/* HEADER */
+
+header {
+    width: 100%;
+    background-color: var(--dark-one);
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--light-one);
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 1.5rem;
+    margin-left: 0.3rem;
+}
+
+.links ul {
+    display: flex;
+}
+
+.links a {
+    display: inline-block;
+    padding: 0.9rem 1.2rem;
+    color: var(--light-one);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.links a.active {
+    background-color: var(--main);
+    color: var(--light-two);
+    border-radius: 2rem;
+    padding: 0.9rem 2.1rem;
+    margin-left: 1rem;
+}
+
+.links a:hover {
+    color: var(--light-two);
+}
+
+.links a.active:hover {
+    color: var(--dark-one);
+    background-color: var(--light-two);
+}
+
+.header-content .container.grid-2 {
+    grid-template-columns: 2.5fr 3.5fr;
+    min-height: calc(100vh - 6rem);
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+
+.header-content .image .image-element {
+    max-width: 400px;
+}
+
+.header-title {
+    font-size: 3.2rem;
+    line-height: 1;
+    color: var(--light-two);
+}
+
+.header-content .text {
+    margin: 2.15rem 0;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--main);
+    color: var(--light-two);
+    padding: .85rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--light-one);
+    color: var(--dark-two);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+
+.shape {
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.20;
+}
+
+header .dragon {
+    top: 85%;
+    left: 15%;
+    --fa-rotate-angle: -45deg;
+}
+
+header .meteor {
+    top: 71%;
+    left: 85%;
+}
+
+header .virus {
+    top: 49%;
+    left: 39%;
+}
+
+header .poo {
+    top: 29%;
+    left: 5%;
+}
+
+header .astronaut {
+    top: 11%;
+    left: 90%;
+}
+
+header .crossbones {
+    top: 4%;
+    left: 50%;
+}
+
+
+
+/* FIM DO HEADER */
