@@ -1,5 +1,5 @@
 
-/* RESET */
+/* CONFIGS GERAIS E RESET */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
@@ -66,7 +66,72 @@ img {
     justify-content: center;
 }
 
-/* FIM DO RESET */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+
+.shape {
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.20;
+}
+
+.section {
+    padding: 7rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    padding-bottom: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.title:before {
+    content: attr(data-title);
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--main);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--main);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-header .text {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.title-sm {
+    color: var(--dark-one);
+    font-weight: 800;
+}
+
+/* FIM DAS CONFIGS GERAIS E RESET */
 
 
 /* HEADER */
@@ -144,7 +209,7 @@ nav .container {
 
 
 .header-content .image .image-element {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .header-title {
@@ -175,20 +240,6 @@ nav .container {
     color: var(--dark-two);
 }
 
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    left: 0;
-    top: 0;
-}
-
-.shape {
-    position: absolute;
-    font-size: 60px;
-    opacity: 0.20;
-}
 
 header .dragon {
     top: 85%;
@@ -199,6 +250,11 @@ header .dragon {
 header .meteor {
     top: 71%;
     left: 85%;
+}
+
+header .meteor2 {
+    top: 75%;
+    left: 45%;
 }
 
 header .virus {
@@ -216,11 +272,103 @@ header .astronaut {
     left: 90%;
 }
 
+header .astronaut2 {
+    top: 38%;
+    left: 60%;
+}
+
 header .crossbones {
     top: 4%;
     left: 50%;
 }
 
 
-
 /* FIM DO HEADER */
+
+
+/* SECTION SERVICES */
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card-wrap {
+    margin: 1.7rem 0.8rem;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    background-color: var(--light-one);
+    border: 1px solid var(--main);
+    border-radius: 8px;
+    max-width: 250px;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card-wrap:hover .card  {
+    transform: translateY(-10px);
+}
+
+.card:before {
+    content: attr(data-card);
+    position: absolute;
+    right: 25%;
+    top: 5%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--main);
+    opacity: 0.10;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background-color: var(--main);
+    transition: 0.2s ease;
+}
+
+.card-wrap:hover .card:after {
+    height: 5px;
+}
+
+.icon {
+    font-size: 80px;
+    margin-bottom: 1.1rem;
+    color: var(--main);
+}
+
+.card .title-sm {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.card .text {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.card .btn:hover {
+    background-color: var(--midtone);
+    color: var(--dark-two);
+}
+
+.btn.small {
+    font-size: 0.7rem;
+    padding: 0.9rem 1.4rem;
+}
+/* FIM DA SECTION SERVICES */
