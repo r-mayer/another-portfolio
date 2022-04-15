@@ -586,3 +586,139 @@ header .crossbones {
 }
 
 /* FIM DA SECTION PORTFOLIO */
+
+
+/* SECTION ABOUT */
+
+.about {
+    overflow: hidden;
+    position: relative;
+}
+
+.about img {
+    max-width: 400px;
+}
+
+.about .title-sm {
+    margin-bottom: 1rem;
+}
+
+.skills {
+    margin: 1rem 0 2.5rem 0;
+}
+
+.skill {
+    margin: 0.8rem 0;
+}
+
+.skill-title {
+    font-size: 0.8rem;
+    color: var(--dark-two);
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    height: 8px;
+    width: 80%;
+    border-radius: 7px;
+    background-color: var(--dark-one);
+    transition: 0.7s;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--main);
+    transition: 0.7s;
+}
+
+
+.skill.hmtl .skill-progress {
+    width: 85%;
+}
+
+.skill.css .skill-progress {
+    width: 95%;
+}
+
+.skill.js .skill-progress {
+    width: 65%;
+}
+
+.skill.figma .skill-progress {
+    width: 80%;
+}
+
+.skill.react .skill-progress {
+    width: 15%;
+}
+
+.skill:hover .skill-bar {
+    background-color: var(--light-one);
+}
+
+
+.skill:hover .skill-progress {
+    background-color: var(--main);
+}
+
+.about .btn {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.background-about {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; 
+}
+
+.about .shape {
+    opacity: 0.05;
+}
+
+.about .dragon {
+    top: 71%;
+    left: 85%;
+    --fa-rotate-angle: -45deg;
+}
+
+.about .meteor {
+    top: 85%;
+    left: 15%;
+}
+
+.about .meteor2 {
+    top: 25%;
+    left: 80%;
+}
+
+.about .poo {
+    top: 29%;
+    left: 5%;
+}
+
+.about .virus {
+    top: 15%;
+    left: 34%;
+}
+
+.about .astronaut {
+    top: 11%;
+    left: 90%;
+}
+
+.about .astronaut2 {
+    top: 75%;
+    left: 45%;
+}
+
+.about .crossbones {
+    top: 38%;
+    left: 60%;
+}
+
+
+/* FIM DA SECTION ABOUT */
